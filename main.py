@@ -19,6 +19,7 @@ def main():
     dt_list = content.dl.find_all("dt")
     dd_list = content.dl.find_all("dd")
     arxiv_base = "https://arxiv.org/abs/"
+    arxiv_base = arxiv_base.replace("arxiv.org", "xxx.itp.ac.cn")
 
     assert len(dt_list) == len(dd_list)
 
